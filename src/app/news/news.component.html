@@ -1,0 +1,37 @@
+
+<mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Registration
+      </mat-panel-title>
+      <mat-panel-description>
+        News
+      </mat-panel-description>
+   </mat-expansion-panel-header>
+    <div class="clsdisp">
+      <mat-form-field>
+     <input matInput #eid placeholder="Enter news id" [(ngModel)]="news.id">
+    </mat-form-field>
+    <mat-form-field>
+    <input matInput #name placeholder="Enter title" [(ngModel)]="news.title"> 
+      </mat-form-field>
+      <mat-form-field>
+          <textarea matInput [(ngModel)]="">
+              
+          </textarea>
+        <input matInput #name placeholder="Enter Description" [(ngModel)]="news.descri"> 
+          </mat-form-field>
+    <button (click)="addRecord()">Register</button>
+   <span id="errinfo"></span>
+  </div>
+  
+  </mat-expansion-panel>
+  <div class="dispcard">
+  <mat-card *ngFor="let n of newsarr">
+  <mat-card-title>{{n.title}}</mat-card-title>
+  <mat-card-content>
+   {{n.descri}}
+  </mat-card-content>
+  </mat-card>
+  
+  </div>

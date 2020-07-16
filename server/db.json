@@ -1,0 +1,24 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "Economy",
+      "descri": "Made in India"
+    },
+    {
+      "id": "2",
+      "title": "India",
+      "descri": "My country"
+    },
+    {
+      "id": "4",
+      "title": "School",
+      "descri": "Closed till Nov"
+    },
+    {
+      "id": "6",
+      "title": "IT",
+      "descri": "Work from home"
+    }
+  ]
+}
