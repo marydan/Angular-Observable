@@ -1,0 +1,16 @@
+<h3> Login</h3>
+<div></div>
+
+<form name="User" (ngSubmit)="getValue()">
+
+    <div class="clsdiv">
+<input type="text" name="txtname" matInput [formControl]="userid"  placeholder="Enter user name">
+<span>{{checkId()}}</span> <br>
+
+<input type='text' name="txtpass" matInput [formControl]="password" placeholder="Enter PAssowrd">
+<span>{{ checkPassword()}}</span>
+
+<button type="submit">Login</button>
+        
+    </div>
+</form>

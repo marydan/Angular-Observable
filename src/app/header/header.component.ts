@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CalcuService } from '../calcu.service';
+import { MyrouteService } from '../myroute.service';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +9,17 @@ import { CalcuService } from '../calcu.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private calserve : CalcuService) { }
+  constructor(private calserve : CalcuService,private rouobj : MyrouteService ) { }
  title : string ="";
   ngOnInit(): void {
 
     this.title=this.calserve.callDetails("USTG");
   }
 
+  moveBack()
+  {
+    this.rouobj.goBack();
+  }
 
 
 }

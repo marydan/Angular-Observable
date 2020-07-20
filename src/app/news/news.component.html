@@ -1,5 +1,7 @@
 
-<mat-expansion-panel hideToggle>
+
+<div class="clsnews">
+<mat-expansion-panel class="clsnews" hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
         Registration
@@ -15,10 +17,7 @@
     <mat-form-field>
     <input matInput #name placeholder="Enter title" [(ngModel)]="news.title"> 
       </mat-form-field>
-      <mat-form-field>
-          <textarea matInput [(ngModel)]="">
-              
-          </textarea>
+       <mat-form-field>
         <input matInput #name placeholder="Enter Description" [(ngModel)]="news.descri"> 
           </mat-form-field>
     <button (click)="addRecord()">Register</button>
@@ -35,3 +34,5 @@
   </mat-card>
   
   </div>
+
+ </div>
